@@ -1,3 +1,10 @@
+"""
+This is an example of a simple subscription program that allows users to add, list, and remove subscriptions.
+We are using it to demonstrate how we might first write out the logic for an app like this in python before moving to one of the other frameworks or languages.
+This material is meant to be taught in conjuction with the Decent Subscription github repo.
+"""
+
+
 import datetime
 
 class Subscription:
