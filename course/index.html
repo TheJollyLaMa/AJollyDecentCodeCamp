@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A facilitator-led, 12-week path from a small idea to a tested Web3 dapp prototype.">
+  <title>Idea to Web3 dapp — Decent Code Camp</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #17212b;
+      background: #f3f6f7;
+      line-height: 1.55;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header, main, footer { width: min(100% - 2rem, 940px); margin-inline: auto; }
+    header { padding: 3rem 0 1.5rem; }
+    main { padding-bottom: 3rem; }
+    h1 { max-width: 760px; margin: .4rem 0 1rem; line-height: 1.12; font-size: clamp(2rem, 6vw, 3.6rem); }
+    h2 { margin-top: 2.5rem; }
+    a { color: #075b88; }
+    .eyebrow { font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #315d66; }
+    .status, .offer, .week, .notice { border: 1px solid #c8d6dc; border-radius: .8rem; background: #fff; padding: 1rem 1.2rem; }
+    .status { border-left: .4rem solid #bb7014; }
+    .weeks { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: .8rem; padding: 0; list-style: none; }
+    .week h3 { margin: 0 0 .4rem; }
+    .week p { margin: .35rem 0; }
+    .offer { border: 2px solid #286976; }
+    .price { font-size: 1.5rem; font-weight: 750; }
+    .button { display: inline-block; padding: .7rem 1rem; border-radius: .45rem; color: #fff; background: #075b88; font-weight: 700; text-decoration: none; }
+    .button:focus-visible, a:focus-visible { outline: 3px solid #d27500; outline-offset: 3px; }
+    .fineprint { font-size: .95rem; }
+    footer { padding: 1rem 0 2rem; border-top: 1px solid #c8d6dc; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+  <script src="./decent-head.config.js"></script>
+  <script type="module" src="./vendor/decent-head/2.0.0/js/main.js"></script>
+  <decent-header></decent-header>
+  <header>
+    <p class="eyebrow">Decent Code Camp · prepared course</p>
+    <h1>Turn a useful idea into a Web3 dapp prototype</h1>
+    <p>A beginner-friendly, facilitator-led course that starts with your problem, builds core web skills, and finishes with a tested, documented prototype. No wallet or crypto purchase is required for the lessons.</p>
+    <p class="status"><strong>Status: local course material, not enrollment.</strong> The course and Sandbox exercise are prepared in source repositories. No cohort dates, hosted course, payment checkout, or live learner records are active.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="outcomes">
+      <h2 id="outcomes">What you will practice</h2>
+      <ul>
+        <li>Turn a real need into a small, testable product brief and explain who controls its data and decisions.</li>
+        <li>Build a responsive web interface with HTML, CSS, JavaScript, and beginner Python practice.</li>
+        <li>Use Git, tests, APIs, and a wallet/contract <em>simulation</em> to understand a dapp's parts and limits.</li>
+        <li>Use AI coding tools as optional collaborators: ask bounded questions, inspect generated changes, run tests, and keep the final decisions yours.</li>
+        <li>Present a working prototype and evidence you choose to share. A blockchain deployment is not part of this pilot.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="schedule">
+      <h2 id="schedule">12-week learning path</h2>
+      <ol class="weeks">
+        <li class="week"><h3>1 · Need and idea</h3><p><strong>Outcome:</strong> Map a user need, assumptions, and who should retain agency.</p><p><strong>Exercise:</strong> Write a one-page product brief and compare it with a no-build alternative.</p><p><strong>Evidence:</strong> One-page product brief and a no-build alternative.</p></li>
+        <li class="week"><h3>2 · HTML and accessibility</h3><p><strong>Outcome:</strong> Structure a page with headings, labels, links, and keyboard navigation.</p><p><strong>Exercise:</strong> Build the brief's first screen and test it using only a keyboard.</p><p><strong>Evidence:</strong> A semantic page and accessibility checklist.</p></li>
+        <li class="week"><h3>3 · CSS and responsive design</h3><p><strong>Outcome:</strong> Style a small interface for narrow and wide screens.</p><p><strong>Exercise:</strong> Add a small design system and test mobile and desktop widths.</p><p><strong>Evidence:</strong> Two viewport screenshots, with private details removed.</p></li>
+        <li class="week"><h3>4 · JavaScript and interaction</h3><p><strong>Outcome:</strong> Model one user action, validation rule, and honest error state.</p><p><strong>Exercise:</strong> Add an interaction and test empty, valid, and invalid input.</p><p><strong>Evidence:</strong> A working interaction and a test case.</p></li>
+        <li class="week"><h3>5 · Python foundations</h3><p><strong>Outcome:</strong> Practice input, types, conditions, loops, and functions using existing camp examples.</p><p><strong>Exercise:</strong> Adapt a Python practice problem using fictional input.</p><p><strong>Evidence:</strong> One adapted exercise with sample input/output.</p></li>
+        <li class="week"><h3>6 · Git and review</h3><p><strong>Outcome:</strong> Make small commits, explain a change, and review code with permission.</p><p><strong>Exercise:</strong> Create a branch, inspect a diff, and run a test.</p><p><strong>Evidence:</strong> A change log and a test run.</p></li>
+        <li class="week"><h3>7 · Data and APIs</h3><p><strong>Outcome:</strong> Read sample API data, handle unavailable states, and avoid sending private data.</p><p><strong>Exercise:</strong> Read a public sample or local fixture and handle an empty response.</p><p><strong>Evidence:</strong> A data-flow sketch and loading/error states.</p></li>
+        <li class="week"><h3>8 · Dapp boundaries</h3><p><strong>Outcome:</strong> Compare a normal web app with a wallet, signature, and contract; identify risks and non-chain alternatives.</p><p><strong>Exercise:</strong> Draw the browser, optional wallet, mock contract, and event/read model.</p><p><strong>Evidence:</strong> A simple architecture diagram and a privacy checklist.</p></li>
+        <li class="week"><h3>9 · Wallet interaction (mock)</h3><p><strong>Outcome:</strong> Explain connect/reject/disconnect and unsupported states without opening a wallet.</p><p><strong>Exercise:</strong> Build a four-state mock flow that never implies a live connection.</p><p><strong>Evidence:</strong> A UI state table for each outcome.</p></li>
+        <li class="week"><h3>10 · Events and ledger exercise</h3><p><strong>Outcome:</strong> Distinguish a local event-shaped record from a confirmed on-chain event.</p><p><strong>Exercise:</strong> Use the Sandbox synthetic facilitator/learner ledger and inspect its bounds and unavailable state.</p><p><strong>Evidence:</strong> A local test record and a short explanation of what is not on-chain.</p></li>
+        <li class="week"><h3>11 · Prototype and testing</h3><p><strong>Outcome:</strong> Connect a prototype to a mock contract adapter and test success, rejection, and unavailable states.</p><p><strong>Exercise:</strong> Add tests for a simulated call, rejection, and missing provider without real signatures.</p><p><strong>Evidence:</strong> A demo script and passing local tests.</p></li>
+        <li class="week"><h3>12 · Demo and next steps</h3><p><strong>Outcome:</strong> Present a prototype, its trade-offs, and what real deployment would require.</p><p><strong>Exercise:</strong> Give a short demo and list the independent review and deployment gates.</p><p><strong>Evidence:</strong> An optional public portfolio entry or a private/local equivalent.</p></li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="lessons">
+      <h2 id="lessons">Current Code Camp source</h2>
+      <p>The current <code>main</code> branch includes this Python example. The older <code>Class1/main.py</code> through <code>Class4/main.py</code> tree is not restored by the course.</p>
+      <ul>
+        <li><a href="https://github.com/TheJollyLaMa/AJollyDecentCodeCamp/blob/main/Class1/Fibonacci/Fibonacci.py">Python Fibonacci example: functions and loops</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="exercise">
+      <h2 id="exercise">Try the no-wallet Sandbox exercise</h2>
+      <p>The standalone ledger exercise uses synthetic, in-memory examples only. It records no names or wallet data, does not connect to a chain, and does not send learner data to a server.</p>
+      <p>The separate exercise source is in the <a href="https://github.com/TheJollyLaMa/JollySandbox/blob/main/public/course-ledger.html">JollySandbox repository</a>. From a checkout containing <code>public/course-ledger.html</code>, serve its <code>public</code> folder with <code>python3 -m http.server 4315 --directory public</code>; then open <code>http://127.0.0.1:4315/course-ledger.html</code>.</p>
+      <p><a href="12-week-dapp-course.md">Read the complete learner and facilitator guide</a>, including exercises and evidence prompts.</p>
+    </section>
+
+    <section aria-labelledby="offer">
+      <h2 id="offer">Facilitator-led pilot offer</h2>
+      <div class="offer">
+        <p class="price">USD $240 per learner · one-time pilot fee</p>
+        <ul>
+          <li>One 90-minute, facilitator-led group session each week for 12 weeks; maximum 6 learners.</li>
+          <li>Plan for about 2 hours of optional independent practice per week. Beginner level; no prior blockchain experience or paid tools required.</li>
+          <li>Payment is by a manually issued invoice after the facilitator confirms a cohort and terms; it is due before the first session. This page does not take payment or enroll anyone.</li>
+          <li>Request a full refund at least 7 calendar days before the first session. If the facilitator cancels before the cohort starts, any amount paid is refunded. Once sessions begin, no refund is offered for sessions already held; a written, pro-rated refund for future sessions is available if a learner withdraws.</li>
+          <li>No financial, employment, token, or income outcome is promised. No crypto or on-chain payment is part of the offer.</li>
+        </ul>
+        <p><a class="button" href="https://github.com/TheJollyLaMa/AJollyDecentCodeCamp/issues/new?title=Question%20about%20the%20Decent%20Code%20Camp%20pilot&amp;body=I%27d%20like%20to%20ask%20about%20a%20future%20pilot.%20I%20understand%20this%20issue%20is%20public%20and%20is%20not%20an%20enrollment%20or%20payment.">Ask about a future pilot</a></p>
+        <p class="fineprint"><strong>Privacy:</strong> the inquiry opens a public GitHub issue form. Anything submitted there is visible to the public; do not include personal or learner information. Asking is not enrollment. No cohort date is currently scheduled.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="evidence">
+      <h2 id="evidence">Your evidence, your choice</h2>
+      <div class="notice">
+        <p>Evidence may be a test result, screenshot, short explanation, or demo. Keep it local/private if you prefer. Public sharing is optional and requires your own informed choice; get separate permission before sharing anyone else's work.</p>
+        <p>Never publish names, contact details, wallet addresses, location, private messages, credentials, or personal/sensitive data. This course does not collect learner evidence or progress.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Course content prepared locally. No hosted enrollment, cohort schedule, payment processing, or blockchain deployment is active.</p>
+    <p><a href="https://github.com/TheJollyLaMa/AJollyDecentCodeCamp/tree/main">AJollyDecentCodeCamp source</a> · <a href="https://github.com/TheJollyLaMa/JollySandbox">JollySandbox source</a></p>
+  </footer>
+</body>
+</html>
